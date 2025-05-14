@@ -319,7 +319,7 @@ p {
 #services .service-item h2 {
 	font-size: 2rem;
 	color: white;
-	margin-bottom: 10px; /* Fixed typo: pra-bottom to margin-bottom */
+	margin-bottom: 10px;
 	text-transform: uppercase;
 }
 #services .service-item p {
@@ -333,7 +333,7 @@ p {
 	flex-direction: column;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 50px 0; /* Reduced from 100px 0 */
+	padding: 50px 0;
 }
 #projects .projects-header h1 {
 	margin-bottom: 50px;
@@ -407,7 +407,7 @@ p {
 	text-align: center;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 50px 20px; /* Reduced from 100px 20px */
+	padding: 50px 20px;
 }
 #about .col-left {
 	width: 250px;
@@ -444,7 +444,7 @@ p {
 	top: 19px;
 	height: 98%;
 	width: 98%;
-	border: 7px solid crimson; /* Fixed typo: crimsozn to crimson */
+	border: 7px solid crimson;
 	z-index: -1;
 }
 /* End About Section */
@@ -455,10 +455,9 @@ p {
 	max-width: 1200px;
 	margin: 0 auto;
 	width: 90%;
-	padding: 50px 0; /* Added for consistency, reduced from implicit 100px in media query */
+	padding: 50px 0;
 }
 #contact .contact-items {
-	/* max-width: 400px; */
 	width: 100%;
 }
 #contact .contact-item {
@@ -505,7 +504,7 @@ p {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding-top: 30px; /* Reduced from 50px */
+	padding-top: 30px;
 	padding-bottom: 10px;
 }
 #footer h2 {
@@ -575,6 +574,143 @@ p {
 	}
 }
 /* End Keyframes */
+
+/* Media Query For Mobile */
+@media only screen and (max-width: 767px) {
+	/* General Adjustments for Mobile */
+	html {
+		font-size: 8px; /* Slightly reduce base font size for better fit */
+	}
+	.container {
+		padding: 0 15px; /* Add padding to prevent content from touching edges */
+	}
+	.section-title {
+		font-size: 3rem; /* Smaller section titles */
+	}
+	.cta {
+		font-size: 1.6rem;
+		padding: 8px 20px;
+	}
+	p {
+		font-size: 1.2rem;
+		line-height: 2rem;
+	}
+
+	/* Header */
+	#header .nav-list ul a {
+		font-size: 2rem; /* Smaller nav links */
+		padding: 15px;
+	}
+	#header .hamburger {
+		transform: scale(0.7); /* Slightly smaller hamburger */
+	}
+
+	/* Hero Section */
+	#hero .hero {
+		padding: 0 20px;
+	}
+	#hero h1 {
+		font-size: 3rem; /* Smaller hero text */
+	}
+	#hero .cta {
+		margin-top: 20px;
+	}
+
+	/* Services Section */
+	#services .services {
+		padding: 50px 0;
+	}
+	#services .service-item {
+		flex-basis: 90%; /* Reduced width to create space */
+		height: 300px; /* Slightly shorter height */
+		margin: 10px auto; /* Center with auto margins for left/right spacing */
+	}
+	#services .service-bottom .icon {
+		height: 60px;
+		width: 60px; /* Keep icons visible and slightly smaller */
+	}
+	#services .service-item h2 {
+		font-size: 1.8rem;
+	}
+	#services .service-item p {
+		font-size: 1.2rem;
+	}
+
+	/* Projects Section */
+	#projects .projects {
+		padding: 30px 0;
+	}
+	#projects .project-item {
+		width: 90%; /* Reduced width to create space */
+		margin: 20px auto; /* Center with auto margins for left/right spacing */
+	}
+	#projects .project-info {
+		padding: 20px;
+	}
+	#projects .project-info h1 {
+		font-size: 2.5rem; /* Smaller project titles */
+	}
+	#projects .project-info h2 {
+		font-size: 1.6rem;
+	}
+	#projects .project-img {
+		display: none; /* Hide project images on mobile */
+	}
+	#projects .project-info {
+		flex-basis: 100%; /* Project info takes full width */
+	}
+
+	/* About Section */
+	#about .about {
+		padding: 30px 15px;
+	}
+	#about .col-left {
+		width: 200px;
+		height: 300px; /* Smaller image size */
+	}
+	#about .col-right h2 {
+		font-size: 1.6rem;
+	}
+	#about .col-right .cta {
+		font-size: 1.6rem;
+		padding: 8px 20px;
+	}
+
+	/* Contact Section */
+	#contact .contact {
+		padding: 30px 0;
+	}
+	#contact .contact-item {
+		width: 100%;
+		margin: 15px 0;
+		padding: 20px;
+	}
+	#contact .contact-item .icon {
+		width: 60px; /* Keep icons visible */
+	}
+	#contact .contact-info h1 {
+		font-size: 2rem;
+	}
+	#contact .contact-info h2 {
+		font-size: 1.2rem;
+	}
+
+	/* Footer */
+	#footer .footer {
+		padding: 20px 0;
+	}
+	#footer .social-item {
+		height: 40px;
+		width: 40px; /* Keep social icons visible, slightly smaller */
+	}
+	#footer h2 {
+		font-size: 1.6rem;
+	}
+	#footer p {
+		font-size: 1.2rem;
+	}
+}
+/* End Media Query For Mobile */
 
 /* Media Query For Tablet */
 @media only screen and (min-width: 768px) {
@@ -648,7 +784,7 @@ p {
 	/* contact */
 	#contact .contact {
 		flex-direction: column;
-		padding: 50px 0; /* Reduced from 100px 0 */
+		padding: 50px 0;
 		align-items: center;
 		justify-content: center;
 		min-width: 20vh;
